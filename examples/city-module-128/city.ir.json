@@ -1,0 +1,30 @@
+{
+  "kind": "city",
+  "id": "city-module-128",
+  "dimension": "minecraft:overworld",
+  "groundY": 96,
+  "origin": { "x": 0, "y": 94, "z": 0 },
+  "size": { "x": 128, "z": 128 },
+  "roads": [
+    {
+      "id": "main-x",
+      "axis": "x",
+      "center": 64,
+      "start": 0,
+      "length": 128,
+      "roadWidth": 9,
+      "sidewalk": 3
+    }
+  ],
+  "plots": [
+    { "id": "n1", "x": 8, "z": 8, "size": 10 },
+    { "id": "n2", "x": 20, "z": 8, "size": 10 },
+    { "id": "s1", "x": 8, "z": 80, "size": 10 },
+    { "id": "s2", "x": 20, "z": 80, "size": 10 }
+  ],
+  "anchors": [
+    { "id": "lamp-1", "x": 4, "y": 97, "z": 52, "kind": "light" },
+    { "id": "lamp-2", "x": 4, "y": 97, "z": 76, "kind": "light" },
+    { "id": "npc-sales", "x": 64, "y": 97, "z": 48, "kind": "npc" }
+  ]
+}

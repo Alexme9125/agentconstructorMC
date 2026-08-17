@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "id": "plot-pad",
+  "dimension": "minecraft:overworld",
+  "steps": [
+    {
+      "type": "terrain",
+      "id": "plot-pad",
+      "from": {
+        "x": 0,
+        "z": 0
+      },
+      "to": {
+        "x": 9,
+        "z": 9
+      },
+      "layers": [
+        {
+          "y": 94,
+          "block": "minecraft:smooth_stone"
+        },
+        {
+          "y": 95,
+          "block": "minecraft:white_stained_glass"
+        },
+        {
+          "y": 96,
+          "block": "minecraft:white_stained_glass"
+        }
+      ]
+    }
+  ]
+}

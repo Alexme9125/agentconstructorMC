@@ -1,0 +1,28 @@
+{
+  "kind": "structure",
+  "id": "house-10",
+  "dimension": "minecraft:overworld",
+  "origin": { "x": 0, "y": 97, "z": 0 },
+  "size": { "x": 10, "y": 7, "z": 10 },
+  "palette": {
+    "wall": "minecraft:oak_planks",
+    "floor": "minecraft:oak_planks",
+    "roof": "minecraft:dark_oak_stairs[facing=north,half=bottom,shape=straight]",
+    "frame": "minecraft:oak_log",
+    "window": "minecraft:glass_pane",
+    "door": "minecraft:air"
+  },
+  "ops": [
+    { "op": "box", "from": [0, 0, 0], "to": [9, 0, 9], "block": "floor" },
+    { "op": "hollow_box", "from": [0, 1, 0], "to": [9, 4, 9], "block": "wall" },
+    { "op": "box", "from": [0, 1, 0], "to": [0, 4, 0], "block": "frame" },
+    { "op": "box", "from": [9, 1, 0], "to": [9, 4, 0], "block": "frame" },
+    { "op": "box", "from": [0, 1, 9], "to": [0, 4, 9], "block": "frame" },
+    { "op": "box", "from": [9, 1, 9], "to": [9, 4, 9], "block": "frame" },
+    { "op": "box", "from": [0, 5, 0], "to": [9, 5, 9], "block": "minecraft:dark_oak_stairs[facing=south,half=bottom,shape=straight]" },
+    { "op": "clear", "from": [4, 1, 0], "to": [5, 2, 0] },
+    { "op": "box", "from": [2, 2, 0], "to": [2, 3, 0], "block": "window" },
+    { "op": "box", "from": [7, 2, 0], "to": [7, 3, 0], "block": "window" },
+    { "op": "box", "from": [4, 6, 4], "to": [5, 6, 5], "block": "minecraft:oak_planks" }
+  ]
+}

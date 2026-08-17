@@ -1,0 +1,12 @@
+{
+  "kind": "terrain",
+  "id": "plot-pad",
+  "dimension": "minecraft:overworld",
+  "origin": { "x": 0, "y": 94, "z": 0 },
+  "size": { "x": 10, "y": 3, "z": 10 },
+  "layers": [
+    { "offsetY": 0, "block": "structure" },
+    { "offsetY": 1, "block": "bearing" },
+    { "offsetY": 2, "block": "surface" }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "printcore": {
+      "command": "python3",
+      "args": ["-m", "printcore_mcp", "serve"],
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/compiler:${workspaceFolder}/mcp",
+        "PRINTCORE_URL": "http://127.0.0.1:9471",
+        "PRINTCORE_TOKEN": "printcore-dev-token"
+      }
+    }
+  }
+}

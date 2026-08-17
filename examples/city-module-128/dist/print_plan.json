@@ -1,0 +1,435 @@
+{
+  "version": 1,
+  "id": "city-module-128",
+  "dimension": "minecraft:overworld",
+  "steps": [
+    {
+      "type": "fill",
+      "id": "city-module-128-structure",
+      "from": {
+        "x": 0,
+        "y": 94,
+        "z": 0
+      },
+      "to": {
+        "x": 127,
+        "y": 94,
+        "z": 127
+      },
+      "block": "minecraft:smooth_stone"
+    },
+    {
+      "type": "fill",
+      "id": "main-x-road",
+      "from": {
+        "x": 0,
+        "y": 96,
+        "z": 60
+      },
+      "to": {
+        "x": 127,
+        "y": 96,
+        "z": 68
+      },
+      "block": "minecraft:black_concrete"
+    },
+    {
+      "type": "fill",
+      "id": "main-x-walk-n",
+      "from": {
+        "x": 0,
+        "y": 96,
+        "z": 57
+      },
+      "to": {
+        "x": 127,
+        "y": 96,
+        "z": 59
+      },
+      "block": "minecraft:smooth_stone"
+    },
+    {
+      "type": "fill",
+      "id": "main-x-walk-s",
+      "from": {
+        "x": 0,
+        "y": 96,
+        "z": 69
+      },
+      "to": {
+        "x": 127,
+        "y": 96,
+        "z": 71
+      },
+      "block": "minecraft:smooth_stone"
+    },
+    {
+      "type": "terrain",
+      "id": "n1-pad",
+      "from": {
+        "x": 8,
+        "z": 8
+      },
+      "to": {
+        "x": 17,
+        "z": 17
+      },
+      "layers": [
+        {
+          "y": 94,
+          "block": "minecraft:smooth_stone"
+        },
+        {
+          "y": 95,
+          "block": "minecraft:white_stained_glass"
+        },
+        {
+          "y": 96,
+          "block": "minecraft:white_stained_glass"
+        }
+      ]
+    },
+    {
+      "type": "fill",
+      "id": "n1-border-n",
+      "from": {
+        "x": 8,
+        "y": 97,
+        "z": 8
+      },
+      "to": {
+        "x": 17,
+        "y": 97,
+        "z": 8
+      },
+      "block": "minecraft:smooth_stone_slab"
+    },
+    {
+      "type": "fill",
+      "id": "n1-border-s",
+      "from": {
+        "x": 8,
+        "y": 97,
+        "z": 17
+      },
+      "to": {
+        "x": 17,
+        "y": 97,
+        "z": 17
+      },
+      "block": "minecraft:smooth_stone_slab"
+    },
+    {
+      "type": "fill",
+      "id": "n1-border-w",
+      "from": {
+        "x": 8,
+        "y": 97,
+        "z": 8
+      },
+      "to": {
+        "x": 8,
+        "y": 97,
+        "z": 17
+      },
+      "block": "minecraft:smooth_stone_slab"
+    },
+    {
+      "type": "fill",
+      "id": "n1-border-e",
+      "from": {
+        "x": 17,
+        "y": 97,
+        "z": 8
+      },
+      "to": {
+        "x": 17,
+        "y": 97,
+        "z": 17
+      },
+      "block": "minecraft:smooth_stone_slab"
+    },
+    {
+      "type": "terrain",
+      "id": "n2-pad",
+      "from": {
+        "x": 20,
+        "z": 8
+      },
+      "to": {
+        "x": 29,
+        "z": 17
+      },
+      "layers": [
+        {
+          "y": 94,
+          "block": "minecraft:smooth_stone"
+        },
+        {
+          "y": 95,
+          "block": "minecraft:white_stained_glass"
+        },
+        {
+          "y": 96,
+          "block": "minecraft:white_stained_glass"
+        }
+      ]
+    },
+    {
+      "type": "fill",
+      "id": "n2-border-n",
+      "from": {
+        "x": 20,
+        "y": 97,
+        "z": 8
+      },
+      "to": {
+        "x": 29,
+        "y": 97,
+        "z": 8
+      },
+      "block": "minecraft:smooth_stone_slab"
+    },
+    {
+      "type": "fill",
+      "id": "n2-border-s",
+      "from": {
+        "x": 20,
+        "y": 97,
+        "z": 17
+      },
+      "to": {
+        "x": 29,
+        "y": 97,
+        "z": 17
+      },
+      "block": "minecraft:smooth_stone_slab"
+    },
+    {
+      "type": "fill",
+      "id": "n2-border-w",
+      "from": {
+        "x": 20,
+        "y": 97,
+        "z": 8
+      },
+      "to": {
+        "x": 20,
+        "y": 97,
+        "z": 17
+      },
+      "block": "minecraft:smooth_stone_slab"
+    },
+    {
+      "type": "fill",
+      "id": "n2-border-e",
+      "from": {
+        "x": 29,
+        "y": 97,
+        "z": 8
+      },
+      "to": {
+        "x": 29,
+        "y": 97,
+        "z": 17
+      },
+      "block": "minecraft:smooth_stone_slab"
+    },
+    {
+      "type": "terrain",
+      "id": "s1-pad",
+      "from": {
+        "x": 8,
+        "z": 80
+      },
+      "to": {
+        "x": 17,
+        "z": 89
+      },
+      "layers": [
+        {
+          "y": 94,
+          "block": "minecraft:smooth_stone"
+        },
+        {
+          "y": 95,
+          "block": "minecraft:white_stained_glass"
+        },
+        {
+          "y": 96,
+          "block": "minecraft:white_stained_glass"
+        }
+      ]
+    },
+    {
+      "type": "fill",
+      "id": "s1-border-n",
+      "from": {
+        "x": 8,
+        "y": 97,
+        "z": 80
+      },
+      "to": {
+        "x": 17,
+        "y": 97,
+        "z": 80
+      },
+      "block": "minecraft:smooth_stone_slab"
+    },
+    {
+      "type": "fill",
+      "id": "s1-border-s",
+      "from": {
+        "x": 8,
+        "y": 97,
+        "z": 89
+      },
+      "to": {
+        "x": 17,
+        "y": 97,
+        "z": 89
+      },
+      "block": "minecraft:smooth_stone_slab"
+    },
+    {
+      "type": "fill",
+      "id": "s1-border-w",
+      "from": {
+        "x": 8,
+        "y": 97,
+        "z": 80
+      },
+      "to": {
+        "x": 8,
+        "y": 97,
+        "z": 89
+      },
+      "block": "minecraft:smooth_stone_slab"
+    },
+    {
+      "type": "fill",
+      "id": "s1-border-e",
+      "from": {
+        "x": 17,
+        "y": 97,
+        "z": 80
+      },
+      "to": {
+        "x": 17,
+        "y": 97,
+        "z": 89
+      },
+      "block": "minecraft:smooth_stone_slab"
+    },
+    {
+      "type": "terrain",
+      "id": "s2-pad",
+      "from": {
+        "x": 20,
+        "z": 80
+      },
+      "to": {
+        "x": 29,
+        "z": 89
+      },
+      "layers": [
+        {
+          "y": 94,
+          "block": "minecraft:smooth_stone"
+        },
+        {
+          "y": 95,
+          "block": "minecraft:white_stained_glass"
+        },
+        {
+          "y": 96,
+          "block": "minecraft:white_stained_glass"
+        }
+      ]
+    },
+    {
+      "type": "fill",
+      "id": "s2-border-n",
+      "from": {
+        "x": 20,
+        "y": 97,
+        "z": 80
+      },
+      "to": {
+        "x": 29,
+        "y": 97,
+        "z": 80
+      },
+      "block": "minecraft:smooth_stone_slab"
+    },
+    {
+      "type": "fill",
+      "id": "s2-border-s",
+      "from": {
+        "x": 20,
+        "y": 97,
+        "z": 89
+      },
+      "to": {
+        "x": 29,
+        "y": 97,
+        "z": 89
+      },
+      "block": "minecraft:smooth_stone_slab"
+    },
+    {
+      "type": "fill",
+      "id": "s2-border-w",
+      "from": {
+        "x": 20,
+        "y": 97,
+        "z": 80
+      },
+      "to": {
+        "x": 20,
+        "y": 97,
+        "z": 89
+      },
+      "block": "minecraft:smooth_stone_slab"
+    },
+    {
+      "type": "fill",
+      "id": "s2-border-e",
+      "from": {
+        "x": 29,
+        "y": 97,
+        "z": 80
+      },
+      "to": {
+        "x": 29,
+        "y": 97,
+        "z": 89
+      },
+      "block": "minecraft:smooth_stone_slab"
+    },
+    {
+      "type": "sparse",
+      "id": "city-module-128-anchors",
+      "blocks": [
+        {
+          "x": 4,
+          "y": 97,
+          "z": 52,
+          "block": "minecraft:lantern"
+        },
+        {
+          "x": 4,
+          "y": 97,
+          "z": 76,
+          "block": "minecraft:lantern"
+        },
+        {
+          "x": 64,
+          "y": 97,
+          "z": 48,
+          "block": "minecraft:glowstone"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "vanilla": true,
+  "blocks": {
+    "air": "minecraft:air",
+    "structure": "minecraft:smooth_stone",
+    "bearing": "minecraft:white_stained_glass",
+    "surface": "minecraft:white_stained_glass",
+    "border": "minecraft:smooth_stone_slab",
+    "road": "minecraft:black_concrete",
+    "sidewalk": "minecraft:smooth_stone",
+    "lane_mark": "minecraft:white_concrete",
+    "walkway": "minecraft:terracotta",
+    "wall": "minecraft:oak_planks",
+    "log": "minecraft:oak_log",
+    "floor": "minecraft:oak_planks",
+    "roof": "minecraft:dark_oak_stairs",
+    "window": "minecraft:glass_pane",
+    "door": "minecraft:oak_door",
+    "light": "minecraft:lantern",
+    "anchor": "minecraft:glowstone"
+  },
+  "notes": {
+    "surface": "Stand-in for SweetMagic sugar glass until that mod is on the test server.",
+    "road": "Stand-in for the KubeJS asphalt block."
+  }
+}

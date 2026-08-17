@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agentconstructor.mc/schemas/city.schema.json",
+  "title": "PrintCore city IR",
+  "type": "object",
+  "required": ["kind", "id", "origin", "size"],
+  "properties": {
+    "kind": { "const": "city" },
+    "id": { "type": "string" },
+    "dimension": { "type": "string" },
+    "groundY": { "type": "integer", "default": 96 },
+    "origin": {
+      "type": "object",
+      "required": ["x", "y", "z"],
+      "properties": {
+        "x": { "type": "integer" },
+        "y": { "type": "integer" },
+        "z": { "type": "integer" }
+      }
+    },
+    "size": {
+      "type": "object",
+      "required": ["x", "z"],
+      "properties": {
+        "x": { "type": "integer", "minimum": 1, "maximum": 128 },
+        "y": { "type": "integer" },
+        "z": { "type": "integer", "minimum": 1, "maximum": 128 }
+      }
+    },
+    "roads": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "axis", "center", "length", "roadWidth", "sidewalk"],
+        "properties": {
+          "id": { "type": "string" },
+          "axis": { "enum": ["x", "z"] },
+          "center": { "type": "integer" },
+          "start": { "type": "integer" },
+          "length": { "type": "integer" },
+          "roadWidth": { "type": "integer" },
+          "sidewalk": { "type": "integer" }
+        }
+      }
+    },
+    "plots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "x", "z", "size"],
+        "properties": {
+          "id": { "type": "string" },
+          "x": { "type": "integer" },
+          "z": { "type": "integer" },
+          "size": { "enum": [10, 20, 50] }
+        }
+      }
+    },
+    "anchors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "x", "y", "z", "kind"],
+        "properties": {
+          "id": { "type": "string" },
+          "x": { "type": "integer" },
+          "y": { "type": "integer" },
+          "z": { "type": "integer" },
+          "kind": { "type": "string" }
+        }
+      }
+    }
+  }
+}
