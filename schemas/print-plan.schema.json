@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agentconstructor.mc/schemas/print-plan.schema.json",
+  "title": "PrintCore print plan",
+  "type": "object",
+  "required": ["version", "id", "steps"],
+  "additionalProperties": false,
+  "properties": {
+    "version": { "const": 1 },
+    "id": { "type": "string", "minLength": 1 },
+    "dimension": { "type": "string", "default": "minecraft:overworld" },
+    "steps": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "oneOf": [
+          { "$ref": "#/$defs/fill" },
+          { "$ref": "#/$defs/terrain" },
+          { "$ref": "#/$defs/sparse" },
+          { "$ref": "#/$defs/paste" }
+        ]
+      }
+    }
+  },
+  "$defs": {
+    "vec3": {
+      "type": "object",
+      "required": ["x", "y", "z"],
+      "properties": {
+        "x": { "type": "integer" },
+        "y": { "type": "integer" },
+        "z": { "type": "integer" }
+      }
+    },
+    "fill": {
+      "type": "object",
+      "required": ["type", "id", "from", "to", "block"],
+      "properties": {
+        "type": { "const": "fill" },
+        "id": { "type": "string" },
+        "from": { "$ref": "#/$defs/vec3" },
+        "to": { "$ref": "#/$defs/vec3" },
+        "block": { "type": "string" }
+      }
+    },
+    "terrain": {
+      "type": "object",
+      "required": ["type", "id", "from", "to", "layers"],
+      "properties": {
+        "type": { "const": "terrain" },
+        "id": { "type": "string" },
+        "from": {
+          "type": "object",
+          "required": ["x", "z"],
+          "properties": { "x": { "type": "integer" }, "z": { "type": "integer" } }
+        },
+        "to": {
+          "type": "object",
+          "required": ["x", "z"],
+          "properties": { "x": { "type": "integer" }, "z": { "type": "integer" } }
+        },
+        "layers": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["y", "block"],
+            "properties": {
+              "y": { "type": "integer" },
+              "block": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "sparse": {
+      "type": "object",
+      "required": ["type", "id", "blocks"],
+      "properties": {
+        "type": { "const": "sparse" },
+        "id": { "type": "string" },
+        "blocks": {
+          "type": "array",
+          "maxItems": 4096,
+          "items": {
+            "type": "object",
+            "required": ["x", "y", "z", "block"],
+            "properties": {
+              "x": { "type": "integer" },
+              "y": { "type": "integer" },
+              "z": { "type": "integer" },
+              "block": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "paste": {
+      "type": "object",
+      "required": ["type", "id", "origin"],
+      "properties": {
+        "type": { "const": "paste_schem" },
+        "id": { "type": "string" },
+        "schematicId": { "type": "string" },
+        "schematic": { "type": "string" },
+        "sha256": { "type": "string" },
+        "origin": { "$ref": "#/$defs/vec3" },
+        "rotation": { "enum": [0, 90, 180, 270] },
+        "ignoreAir": { "type": "boolean" }
+      }
+    }
+  }
+}

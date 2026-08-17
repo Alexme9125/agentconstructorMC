@@ -1,0 +1,25 @@
+{
+  "id": "city-module-128",
+  "origin": {
+    "x": 0,
+    "y": 94,
+    "z": 0
+  },
+  "size": {
+    "x": 128,
+    "y": 5,
+    "z": 128
+  },
+  "sha256": "289ce9775b57a2b944976fa35c5597c529032352f990edef745f357d2b7ad7d1",
+  "schematic": "modules/city-module-128.schem",
+  "blocks": [
+    "minecraft:smooth_stone",
+    "minecraft:air",
+    "minecraft:white_stained_glass",
+    "minecraft:black_concrete",
+    "minecraft:smooth_stone_slab",
+    "minecraft:glowstone",
+    "minecraft:lantern"
+  ],
+  "dataVersion": 3465
+}

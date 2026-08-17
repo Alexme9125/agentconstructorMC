@@ -1,0 +1,23 @@
+{
+  "id": "house-10",
+  "origin": {
+    "x": 0,
+    "y": 97,
+    "z": 0
+  },
+  "size": {
+    "x": 10,
+    "y": 7,
+    "z": 10
+  },
+  "sha256": "ed35d12b2fe41e48c0ffd5afa7e371727eceb233acd07ba744d7951c4bcb5b67",
+  "schematic": "modules/house-10.schem",
+  "blocks": [
+    "minecraft:oak_planks",
+    "minecraft:oak_log",
+    "minecraft:air",
+    "minecraft:glass_pane",
+    "minecraft:dark_oak_stairs[facing=south,half=bottom,shape=straight]"
+  ],
+  "dataVersion": 3465
+}

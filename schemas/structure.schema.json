@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agentconstructor.mc/schemas/structure.schema.json",
+  "title": "PrintCore structure IR",
+  "type": "object",
+  "required": ["kind", "id", "size", "ops"],
+  "properties": {
+    "kind": { "const": "structure" },
+    "id": { "type": "string" },
+    "dimension": { "type": "string" },
+    "origin": {
+      "type": "object",
+      "properties": {
+        "x": { "type": "integer" },
+        "y": { "type": "integer" },
+        "z": { "type": "integer" }
+      }
+    },
+    "size": {
+      "type": "object",
+      "required": ["x", "y", "z"],
+      "properties": {
+        "x": { "type": "integer", "minimum": 1, "maximum": 128 },
+        "y": { "type": "integer", "minimum": 1 },
+        "z": { "type": "integer", "minimum": 1, "maximum": 128 }
+      }
+    },
+    "palette": {
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    },
+    "ops": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["op"],
+        "properties": {
+          "op": { "enum": ["box", "hollow_box", "fill", "column", "clear"] },
+          "from": { "type": "array", "items": { "type": "integer" }, "minItems": 3, "maxItems": 3 },
+          "to": { "type": "array", "items": { "type": "integer" }, "minItems": 3, "maxItems": 3 },
+          "block": { "type": "string" },
+          "hollow": { "type": "boolean" }
+        }
+      }
+    }
+  }
+}

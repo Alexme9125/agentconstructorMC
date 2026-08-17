@@ -1,0 +1,20 @@
+{
+  "id": "plot-pad",
+  "origin": {
+    "x": 0,
+    "y": 94,
+    "z": 0
+  },
+  "size": {
+    "x": 10,
+    "y": 3,
+    "z": 10
+  },
+  "sha256": "4813c7e595fcc27d845874f764a57c46b7b7190fc36b2195b71442e21580665f",
+  "schematic": "modules/plot-pad.schem",
+  "blocks": [
+    "minecraft:smooth_stone",
+    "minecraft:white_stained_glass"
+  ],
+  "dataVersion": 3465
+}

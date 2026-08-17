@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "id": "house-10",
+  "dimension": "minecraft:overworld",
+  "steps": [
+    {
+      "type": "paste_schem",
+      "id": "house-10",
+      "schematic": "house-10.schem",
+      "sha256": "ed35d12b2fe41e48c0ffd5afa7e371727eceb233acd07ba744d7951c4bcb5b67",
+      "origin": {
+        "x": 0,
+        "y": 97,
+        "z": 0
+      },
+      "rotation": 0,
+      "ignoreAir": true
+    }
+  ]
+}
